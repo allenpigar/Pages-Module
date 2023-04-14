@@ -1,0 +1,110 @@
+- description: null
+  label: "Pages"
+  name: "pages"
+  sort: 1
+  listed: true
+  hasRoute: true
+  showAsTable: true
+  parent: null
+  fields:
+    - name: "sub_text"
+      label: "List Summary"
+      description: null
+      datatype: "textarea"
+      sort: 1
+      required: true
+      relationship: null
+    - name: "header_text"
+      label: "Heading"
+      description: null
+      datatype: "text"
+      sort: 1
+      required: true
+      relationship: null
+    - name: "sub_header"
+      label: "Sub Heading"
+      description: null
+      datatype: "text"
+      sort: 1
+      required: true
+      relationship: null
+    - name: "featured_image"
+      label: "Featured Image"
+      description: null
+      datatype: "images"
+      sort: 1
+      required: null
+      relationship: null
+      settings:
+        limit: 1
+        list: false
+    - name: "is_feature_clipped"
+      label: "Clip Featured Image"
+      description: null
+      datatype: "yes_no"
+      sort: 1
+      required: true
+      relationship: null
+      settings:
+        list: true
+        options:
+          0: "No"
+          1: "Yes"
+    - name: "featured_image_alt"
+      label: "Featured Image Alt Text"
+      description: null
+      datatype: "text"
+      sort: 1
+      required: true
+      relationship: null
+    - name: "featured_video"
+      label: "Featured Video"
+      description: null
+      datatype: "text"
+      sort: 1
+      required: true
+      relationship: null
+    - name: "schemamarkup"
+      label: "Schema Markup"
+      description: null
+      datatype: "textarea"
+      sort: 1
+      required: true
+      relationship: null
+    - name: "jump_nav"
+      label: "Jump Nav"
+      description: null
+      datatype: "one_to_many"
+      sort: 1
+      required: false
+      relationship: null
+      settings:
+        list: true
+    - name: "show_related_posts"
+      label: "Show Related Posts"
+      description: null
+      datatype: "yes_no"
+      sort: 1
+      required: true
+      relationship: null
+      settings:
+        list: true
+        options:
+          0: "No"
+          1: "Yes"
+    - name: "related_posts"
+      label: "Related Posts"
+      description: null
+      datatype: "one_to_many"
+      sort: 1
+      required: false
+      relationship: null
+      settings:
+        list: true
+    - name: "body"
+      label: "Body"
+      description: null
+      datatype: "wysiwyg_basic"
+      sort: 1
+      required: true
+      relationship: null
